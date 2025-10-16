@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Yavin Office Design</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light p-4 mb-4">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light p-4 mb-4">
     <div class="container">
       <a href="index.html" class="navbar-brand">
         <img src="assets/images/logo.svg" alt="logo" width="150">
@@ -20,10 +24,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav align-items-center ms-auto ">
-          <li class="nav-item"><a href="index.html" class="nav-link fw-semibold ">Home</a></li>
-          <li class="nav-item"><a href="#discover" class="nav-link fw-semibold">Details</a></li>
-          <li class="nav-item"><a href="#summary" class="nav-link fw-semibold">Projects</a></li>
-          <li class="nav-item"><a href="#takeaways" class="nav-link fw-semibold">Contact Us</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#discover" class="nav-link">Details</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#takeaways" class="nav-link text-secondary border border-secondary rounded-4 p-2">Contact Us</a></li>
 
         </ul>
       </div>
@@ -31,18 +35,21 @@
   </nav>
 
 
-  <header class="mt-5 pt-5">
-    <div class="container">
+  <header class="mt-2 pt-3 position-relative overflow-hidden">
+  <img src="assets/images/decoration-star.svg" alt="decoration" class="decor-1 position-absolute opacity-50 z-1">
+    <img src="assets/images/decoration-star.svg" alt="decoration" class="decor-2 position-absolute opacity-50 z-1"> 
+    <div class="container position-relative z-3">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 p-5 text-center">
+          <h1 class="text-capitalize display-6 fw-bold">the <span class="text-primary">perfect</span> office space</h1>
           <p class="lead">We specialize in transforming office spaces into inspiring and functional environments.Let us
             bring your vision to life.</p>
-          <div class="btn-group gap-4 mx-auto">
+          <div class="btn-group d-flex flex-wrap gap-4 mx-auto">
             <button class="btn btn-primary rounded-4">More Details</button>
-            <button class="btn rounded-4">Contact Us</button>
+            <button class="btn btn-outline-secondary rounded-4">Contact Us</button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 p-5 text-center">
           <img src="assets/images/header.png" alt="office image" class="img-fluid">
         </div>
       </div>
@@ -74,7 +81,7 @@
 
   <section class="quote my-5 p-5">
     <div class="container">
-      <h2 class="capitalize">Creating <span>Inspiring</span> Office Spaces</h2>
+      <h2 class="capitalize">Creating <span class="text-secondary">Inspiring</span> Office Spaces</h2>
       <p> At our company, designing office spaces is our passion. We take
         pride in our completed projects that reflect our dedication and
         expertise in creating functional and aesthetically pleasing work
@@ -91,7 +98,7 @@
 
         </div>
         <div class="col-md-6">
-          <h2 class="my-4">Create <span>Unique</span> Office Spaces</h2>
+          <h2 class="my-4">Create <span class="text-primary">Unique</span> Office Spaces</h2>
           <div class="d-flex gap-3 align-items-center">
             <span><i class="bi bi-check-lg fs-1"></i></span>
             <p>Our approach ensures that every office space is tailored to
@@ -124,7 +131,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2><span>Services</span> that we offer</h2>
+          <h2><span class="text-secondary">Services</span> that we offer</h2>
           <p>At our company, we provide a wide range of services to meet all
             your office design needs. With our expertise and attention to
             detail, we ensure that every aspect of your office space is
@@ -133,30 +140,30 @@
         <div class="col-md-6">
           <div class="row g-4">
             <div class="col-lg-4 text-center">
-              <span><i class="bi bi-rocket-takeoff-fill fs-1"></i></span>
-              <h4>Space analysis and planning</h4>
+              <span><i class="bi bi-rocket-takeoff-fill fs-1 text-secondary"></i></span>
+              <h5>Space analysis and planning</h5>
             </div>
             <div class="col-lg-4 text-center">
-              <span><i class="bi bi-clock fs-1"></i></span>
-              <h4>Design and color choosing</h4>
+              <span><i class="bi bi-clock fs-1 text-secondary"></i></span>
+              <h5>Design and color choosing</h5>
             </div>
             <div class="col-lg-4 text-center">
-              <span><i class="bi bi-chat-fill fs-1"></i></span>
-              <h4>Materials and delivery</h4>
+              <span><i class="bi bi-chat-fill fs-1 text-secondary"></i></span>
+              <h5>Materials and delivery</h5>
             </div>
           </div>
           <div class="row g-4">
             <div class="col-lg-4 text-center">
-              <span><i class="bi bi-tools fs-1"></i></span>
-              <h4>Execute the concept</h4>
+              <span><i class="bi bi-tools fs-1 text-secondary"></i></span>
+              <h5>Execute the concept</h5>
             </div>
             <div class="col-lg-4 text-center">
-              <span><i class="bi bi-pie-chart-fill fs-1"></i></span>
-              <h4>Creating great atmosphere</h4>
+              <span><i class="bi bi-pie-chart-fill fs-1 text-secondary"></i></span>
+              <h5>Creating great atmosphere</h5>
             </div>
             <div class="col-lg-4 text-center">
-              <span><i class="bi bi-bar-chart-steps fs-1"></i></span>
-              <h4>Evaluation and reporting</h4>
+              <span><i class="bi bi-bar-chart-steps fs-1 text-secondary"></i></span>
+              <h5>Evaluation and reporting</h5>
             </div>
           </div>
         </div>
@@ -168,7 +175,7 @@
     <div class="container">
       <div class="row g-5">
         <div class="col-md-6">
-          <h2 class="text-capitalize my-4">transform your space for enhance your <span>productivity</span></h2>
+          <h2 class="text-capitalize my-4 ">transform your space for enhance your <span class="text-primary">productivity</span></h2>
           <p>
             A thoughtfully designed and well-organized office space has a
             profound impact on productivity and employee satisfaction. It
@@ -190,13 +197,13 @@
     <div class="container text-center">
       <p class="lead fw-bolder">Our team of highly skilled designers and interior construction workers can deliver above
         your level of expections</p>
-      <button class="btn btn-danger px-3 rounded-5">Get quote</button>
+      <button class="btn btn-secondary px-3 rounded-5">Get quote</button>
     </div>
   </section>
 
   <section class="projects my-5 p-5">
     <div class="container">
-      <h2 class="text-capitalize text-center mb-5">some of our <span>projects</span></h2>
+      <h2 class="text-capitalize text-center mb-5">some of our <span class="text-secondary">projects</span></h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card border-0">
@@ -327,8 +334,8 @@
   <section class="contact">
     <div class="container">
       <div class="row g-5">
-        <div class="col-lg-6 p-5">
-          <img src="assets/images/contact.png" alt="img-fluid w-75">
+        <div class="col-lg-6">
+          <img src="assets/images/contact.png" alt="office" class="img-fluid">
         </div>
         <div class="col-lg-6 p-5">
           <h2>Contact us for a quote</h2>
@@ -356,16 +363,18 @@
         <div class="col-md-4">
           <h5>Links</h5>
           <p class="mb-0">Important: <a href="#">Terms & Conditions</a>, <a href="#">Privacy Policy</a></p>
-          <p class="mb-0">Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></p>
-          <p class="mb-0">Menu: <a href="home">Home</a>, <a href="details">Details</a>, <a href="services">Services</a>, <a href="contact">Contact</a></p>
+          <p class="mb-0">Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a
+              href="#">Illustrations</a></p>
+          <p class="mb-0">Menu: <a href="home">Home</a>, <a href="details">Details</a>, <a href="services">Services</a>,
+            <a href="contact">Contact</a></p>
         </div>
         <div class="col-md-4">
           <div class="d-flex gap-3">
-            <span><i class="bi bi-facebook fs-3"></i></span>
-            <span><i class="bi bi-twitter fs-3"></i></span>
-            <span><i class="bi bi-instagram fs-3"></i></span>
-            <span><i class="bi bi-pinterest fs-3"></i></span>
-            
+            <span><i class="bi bi-facebook fs-3 text-dark"></i></span>
+            <span><i class="bi bi-twitter fs-3 text-dark"></i></span>
+            <span><i class="bi bi-instagram fs-3 text-dark"></i></span>
+            <span><i class="bi bi-pinterest fs-3 text-dark"></i></span>
+
           </div>
           <p>We would love to hear from you <a href="#">contact@site.com</a></p>
         </div>
