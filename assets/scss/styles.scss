@@ -26,15 +26,19 @@ $line-height-base: 1.6;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-header .decor-1{
+.decor-1{
   top: 80px;
   left: -100px;
   width: 300px;
 
 }
-header .decor-2{
+.decor-2{
   top: 80px;
   right: -100px;
   width: 300px;
 
+}
+
+.projects .card:hover{
+  transform: scale(1.05);
 }
