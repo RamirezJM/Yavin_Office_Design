@@ -1,3 +1,18 @@
+const topButton = document.getElementById('btn-top')
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 50){
+    topButton.classList.add('show')
+  }
+  else{
+    topButton.classList.remove('show')
+  }
+})
+topButton.addEventListener('click', () => {
+  document.documentElement.scrollTop = 0
+})
+
+
 
 function incrementStats(){
   const counters = document.querySelectorAll('.stat')
